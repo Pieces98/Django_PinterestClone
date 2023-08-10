@@ -4,7 +4,7 @@
 {% block content %}
 
 <div style="text-align: center; max-width: 500px; margin: 4rem auto;">
-    <form action="{% url 'accountApp:delete' pk=user.pk %}" method="post">
+    <form action="{% url 'accountApp:delete' pk=target_user.pk %}" method="post">
         <div>
             <h4 class="mb-4">
                 Quit
