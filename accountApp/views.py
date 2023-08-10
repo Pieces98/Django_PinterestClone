@@ -22,7 +22,7 @@ def hello_world(request):
         return HttpResponseRedirect(reverse('accountApp:hello_world'))
     else:
         hello_world_list = HelloWorld.objects.all()
-        return render(request, 'accountApp/hello_world.html', context={'hell o_world_list': hello_world_list})
+        return render(request, 'accountApp/hello_world.html', context={'hello_world_list': hello_world_list})
 
 class AccountCreateView(CreateView):
     model = User
