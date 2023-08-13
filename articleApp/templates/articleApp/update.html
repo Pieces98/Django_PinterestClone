@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+
+{% block content %}
+
+<div style="text-align: center; max-width: 500px; margin: 4rem auto;">
+    <form action="{% url 'articleApp:update' pk=target_article.pk %}" method="post" enctype="multipart/form-data">
+        <div>
+            <h4 class="mb-4">
+                Update Article
+            </h4>
+        </div>
+        {% csrf_token %}
+
+        {% bootstrap_form form %}
+
+        <input type="submit" class="btn btn-dark rounded-pill col-6 mt-3">
+    </form>
+</div>
+
+{% endblock %}
