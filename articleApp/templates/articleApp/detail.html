@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load bootstrap5 %}
 
 {% block content %}
     <div style="text-align: center;">
@@ -24,5 +25,7 @@
         </a>
         {% endif %}
         <hr>
+
+        {% include 'commentApp/create.html' with article=target_article %}
     </div>
 {% endblock %}
