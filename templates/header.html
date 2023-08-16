@@ -24,7 +24,7 @@
         <a href="{% url 'accountApp:detail' pk=user.pk %}" class="header_nav">
             <span>MyPage</span>
         </a>
-        <a href="{% url 'accountApp:logout' %}?next={% url 'accountApp:hello_world' %}" class="header_nav">
+        <a href="{% url 'accountApp:logout' %}?next={% url 'home' %}" class="header_nav">
             <span>logout</span>
         </a>
         {% endif %}
